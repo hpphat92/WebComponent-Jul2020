@@ -1,0 +1,18 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<star-rating></star-rating>
+
+<script src="star-rating.js"></script>
+<script>
+  const starRating = document.querySelector('star-rating');
+
+  starRating.addEventListener('rated', (e) => {
+    console.log(`You clicked on item ${e.detail.itemClicked +1}`);
+  })
+</script>
+</body>
+</html>
