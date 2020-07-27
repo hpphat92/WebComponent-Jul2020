@@ -1,0 +1,10 @@
+<h3>{{ title }}</h3>
+
+
+<star-rating #starRating [attr.max]="amountStar" (rated)="onRating($event)"></star-rating>
+
+
+<h4>You clicked on {{ itemClicked }}</h4>
+
+
+<button (click)="setRatingAmount(10)">Set Amount of Star to 10</button>
